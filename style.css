@@ -83,7 +83,7 @@
             min-height: 80vh;
             width: 99%;
             background-size: cover;
-            border-radius: 40px;
+            border-radius: 10px;
         }
 
        
@@ -483,4 +483,5 @@ footer{
     }
 
     
+
         }
