@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/CSS/All-products.css">
+    <script  defer src="/Js/All-products.js"></script>
+    <title>Afri-Square/All-Products</title>
+</head>
+<body>
+    <header class="header">
+        <span>
+            <h3>Afri-Square</h3>
+        </span>
+
+        <ul class="nav">
+            <li><i class="fas fa-shopping-cart"></i><span class="counter">0</span></li>
+            <li><i class="fas fa-bell"></i> <span class="counter">20</span></li>
+            <li><i class="fas fa-circle-user"></i> My Account</li>
+        </ul>
+    </header>
+
+    <div class="filter-sec">
+        <div class="search-sec">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search for products" class="search-int" id="searchInput">
+        </div>
+
+        <div class="filter">
+            <i class="fas fa-filter"></i> <span style="color: #666;">Filter</span>
+        </div>
+    </div>
+
+    <h4>Discover Products</h4>
+
+    <div class="filter-buttons">
+        <ul class="filter-btn">
+            <li class="All-p active" data-category="all">All Products</li>
+            <li class="fil" data-category="electronics">Electronics</li>
+            <li class="fil" data-category="fashion">Fashion</li>
+            <li class="fil" data-category="home">Home & Kitchen</li>
+            <li class="fil" data-category="beauty">Beauty & Health</li>
+            <li class="fil" data-category="toys">Toys & Games</li>
+        </ul>
+    </div>
+
+    <section class="product-section" id="productSection">
+        <!-- Products will be dynamically generated here -->
+    </section>
+
+    <!-- Product Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-product-details">
+                <div class="modal-product-image">
+                    <img id="modalImage" src="" alt="Product Image">
+                </div>
+                <div class="modal-product-info">
+                    <h3 id="modalTitle"></h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i> <span id="modalRating"></span>
+                    </div>
+                    <div class="price">
+                        <span id="modalPrice"></span>
+                        <span class="original-price" id="modalOriginalPrice"></span>
+                    </div>
+                    <p class="description" id="modalDescription"></p>
+                    <div class="modal-actions">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="buy-now">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div>
+                <h3>Africa-Square</h3>
+                <p>Your one-stop <br> marketplace for all <br> your needs. Buy and <br> sell with confidence</p>
+            </div>
+
+            <div>
+                <h4>For Buyers</h4>
+                <ul>
+                    <li>Shop Products</li>
+                    <li>Your Orders</li>
+                    <li>Wishlist</li>
+                    <li>Returns and Refunds</li>
+                    <li>Buyer Help</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>For Sellers</h4>
+                <ul>
+                    <li>Seller Dashboard</li>
+                    <li>Manage Product</li>
+                    <li>Analytics</li>
+                    <li>Seller Help</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>About Us</h4>
+                <ul>
+                    <li>About Afri-Square</li>
+                    <li>Careers</li>
+                    <li>Press and News</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms of Service</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="foot">
+            <p>© 2025 All rights reserved.</p>
+            <ul>
+                <li>Privacy</li>
+                <li>T&C</li>
+                <li>Sitemap</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
